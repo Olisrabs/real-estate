@@ -1,0 +1,72 @@
+/*============================================================================================
+	Why Choose Area
+==============================================================================================*/
+
+.why-choose-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 72px;
+  margin-top: 24px;
+}
+.why-c-card-icon {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: linear-gradient(135deg, #fffaf5 0%, #ffecd9 100%);
+}
+.why-c-card-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+.why-c-card-icon {
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+.why-c-card-info h4 {
+  font-size: 25px;
+  line-height: 120%;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.why-c-card-info p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 150%;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .why-choose-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .why-choose-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .why-c-card-info h4 {
+    font-size: 22px;
+  }
+  .why-c-card-icon {
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+  }
+  .why-c-card-icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/*============================================================================================
+	End Why Choose Area
+==============================================================================================*/
